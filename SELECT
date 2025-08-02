@@ -45,3 +45,5 @@ select firstname,lastname from Employees
 
 
 select EmployeeID,CONCAT(firstname,' ',lastname) as fullName from Employees
+
+--5.Write a query to get all unique Department Name from an Employees table.
