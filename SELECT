@@ -41,7 +41,7 @@ select firstname,salary from Employees
 
 select firstname,lastname from Employees
 
---4.How would you combine firstname and lastname into a single column named FullName?
+--4.Write a SQL Query to filter EmployeeID and combine firstname and lastname into a single column named FullName?
 
 
 select EmployeeID,CONCAT(firstname,' ',lastname) as fullName from Employees
