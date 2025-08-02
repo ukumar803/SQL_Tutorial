@@ -13,3 +13,16 @@ CREATE TABLE Employees (
     Salary DECIMAL(10, 2),
     HireDate DATE
 );
+
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Department, Salary, HireDate)
+VALUES
+(101, 'Riya', 'Sharma', 'Operations', 58000.00, '2021-11-12'),
+(102, 'Aarav', 'Mehta', 'Finance', 64000.00, '2020-06-18'),
+(103, 'Sneha', 'Kumar', 'IT', 80000.00, '2023-01-05'),
+(104, 'Karan', 'Singh', 'HR', 52000.00, '2019-10-25'),
+(105, 'Priya', 'Verma', 'Marketing', 57000.00, '2022-08-14'),
+(106, 'Vikram', 'Rao', 'Logistics', 61000.00, '2020-02-28'),
+(107, 'Neha', 'Patel', 'IT', 79000.00, '2021-05-19'),
+(108, 'Siddharth', 'Gupta', 'Finance', 67000.00, '2018-07-03'),
+(109, 'Ishita', 'Desai', 'Operations', 60000.00, '2022-11-09'),
+(110, 'Rohan', 'Joshi', 'HR', 53000.00, '2019-12-22');
