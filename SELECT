@@ -26,3 +26,22 @@ VALUES
 (108, 'Siddharth', 'Gupta', 'Finance', 67000.00, '2018-07-03'),
 (109, 'Ishita', 'Desai', 'Operations', 60000.00, '2022-11-09'),
 (110, 'Rohan', 'Joshi', 'HR', 53000.00, '2019-12-22');
+
+select * from Employees
+
+--1.Write a SQL Query to filter first Name?
+
+select firstname from Employees
+
+--2.Write a SQL Query to filter first Name and Salary of employees?
+
+select firstname,salary from Employees
+
+--3.Write a SQL Query to filter first Name and Last Name from employees?
+
+select firstname,lastname from Employees
+
+--4.How would you combine firstname and lastname into a single column named FullName?
+
+
+select EmployeeID,CONCAT(firstname,' ',lastname) as fullName from Employees
