@@ -1,0 +1,24 @@
+Temporary Tables in SQL Server
+Temporary tables are special types of tables used to store data temporarily while a session or a procedure is active. 
+They are very useful when you need to manipulate data in steps or hold intermediate results during complex calculations or joins.
+
+Type                      Scope   Prefix   Visible To
+Local Temporary Table    Session    #      Only the session that created it
+Global Temporary Table   Global     ##     All sessions (until last session using it is closed)
+
+Suppose i will create one temporary table from Employees Table
+
+select * into #temp1
+from Employees
+
+Suppose i run normal select statement
+
+select * from #temp1
+it will give output in same window However when i open new window it will not work 
+
+Now we will another table using ##
+select * into ##temp2
+from Employees
+
+select * from ##temp2
+it will give output in both window in same and new window.
