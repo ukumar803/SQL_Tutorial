@@ -1,3 +1,5 @@
+The WHERE clause is used to extract only those records that fulfill a specified condition.
+
 Q1.Retrieve all the details of the employee whose EmployeeID is 105.
 select * from employees where EmployeeID=105
 
