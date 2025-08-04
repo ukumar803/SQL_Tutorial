@@ -1,2 +1,16 @@
+Q1.Retrieve all the details of the employee whose EmployeeID is 105.
+select * from employees where EmployeeID=105
 
-a
+Q2.Display only the EmployeeID and FirstName of the employee with EmployeeID 105.
+select EmployeeID,FirstName from employees where EmployeeID=105
+
+Q3.List all employees who are earning a salary of ₹70,000 or more.
+select * from employees where Salary>=70000
+
+Q4.Display all employee records where the salary is ₹70,000 or less.
+select * from employees where Salary<=70000
+
+Q5.List all unique departments that have employees earning ₹70,000 or less.
+select distinct Department from employees where Salary<=70000
+
+
