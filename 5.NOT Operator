@@ -1,1 +1,13 @@
+NOT Operator in SQL
+The NOT operator is used to negate a condition, meaning it returns the opposite result of what the condition would normally return.
 
+select * from Employees
+
+--Q1.Display all employees whose first name is not 'Riya'
+select * from Employees where not FirstName='Riya'
+
+--Q2.Show all employees whose first name is not 'Riya' and whose salary is not 64,000.
+select * from Employees where not FirstName='Riya' and not Salary=64000
+
+--Q3.Display all employees whose first name is not 'Sharma'
+select * from Employees where not LastName='Sharma'
