@@ -1,0 +1,17 @@
+AND Operator in SQL
+The AND operator is used in the WHERE clause to combine multiple conditions. It returns only the rows where all conditions are true.
+
+--Q1.Write a SQL query to fetch Lastname have Kumar
+select * from Employees where LastName='Kumar'
+
+--Q2.Write a SQL query to fetch Lastname have Kumar and Employeeid is 112
+select * from Employees where LastName='Kumar' and EmployeeID=112
+
+OR Operator in SQL
+The OR operator is used in the WHERE clause to filter records where at least one of the conditions is true.
+
+--Q3.We want to see those departments which are either HR or Finance.
+select * from Employees where Department='HR' or Department='Finance'
+
+--Q4. Show the details of employees who work in either the HR or Finance department and have a salary of exactly 53,000
+select * from Employees where (Department='HR' or Department='Finance') and Salary=53000
