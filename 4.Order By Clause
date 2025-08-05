@@ -1,5 +1,6 @@
 Order By Clause
 The ORDER BY clause in SQL is used to sort the result set of a query by one or more columns, either in ascending (ASC) or descending (DESC) order.
+Asc is not mandatory to specify after any column but Des is mandatory
 select * from employees
 
 Q1.Write a Query to sort Employees table by salary?
